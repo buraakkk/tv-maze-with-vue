@@ -1,7 +1,6 @@
 <template>
     <q-drawer :value="leftDrawerOpen" show-if-above bordered content-class="bg-grey-2">
       <q-list>
-        <!-- <q-item-label header>Essential Links</q-item-label> -->
         <q-item>
           <search-box></search-box>
         </q-item>
@@ -11,7 +10,7 @@
           </q-item-section>
           <q-item-section>
             <q-item-label>Home</q-item-label>
-            <q-item-label caption>Tv shows</q-item-label>
+            <q-item-label caption>All shows</q-item-label>
           </q-item-section>
         </q-item>
         <q-item to="/genres" exact>
@@ -20,7 +19,7 @@
           </q-item-section>
           <q-item-section>
             <q-item-label>Genres</q-item-label>
-            <q-item-label caption>Category of tv shows</q-item-label>
+            <q-item-label caption>All Categories</q-item-label>
           </q-item-section>
         </q-item>
       </q-list>

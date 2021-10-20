@@ -15,7 +15,7 @@
         <q-toolbar-title>
           <div class="logo">
             <a href="/">
-              <q-img src="http://static.tvmaze.com/images/tvm-header-logo.png" />
+              <q-img src="https://pngimg.com/uploads/tv/tv_PNG39244.png" />
             </a>
           </div>
         </q-toolbar-title>
@@ -57,6 +57,6 @@ export default {
 
 <style>
 .logo {
-  width: 75px;
+  width: 70px;
 }
 </style>

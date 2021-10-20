@@ -1,41 +1,41 @@
-import Store from '../'
-import router from '../../router'
-
+import Store from "../";
+import router from "../../router";
 
 router.afterEach((to) => {
   switch (to.name) {
-    case 'home':
-      Store.dispatch('getTvShows')
-      break
-    case 'genres':
-      Store.dispatch('getTvShows')
-      break
-    case 'search':
-      Store.dispatch('searchTvShows', to.params.q)
-      break
+    case "home":
+      Store.dispatch("showTvShows");
+      break;
+    case "genres":
+      Store.dispatch("showTvShows");
+      break;
+    case "search":
+      Store.dispatch("searchTvShows", to.params.q);
+      break;
   }
-})
+});
 
 router.beforeEach((to, from, next) => {
-  const nearestWithTitle = to.matched.slice().reverse().find(r => r.meta && r.meta.title);
-  if(nearestWithTitle) document.title = nearestWithTitle.meta.title;
+  const nearestWithTitle = to.matched
+    .slice()
+    .reverse()
+    .find((r) => r.meta && r.meta.title);
+  if (nearestWithTitle) document.title = nearestWithTitle.meta.title;
   next();
 });
 const localState = {
-  active: { name: 'home' }
-}
+  active: { name: "home" },
+};
 
-const actions = {
-}
+const actions = {};
 
-const mutations = {
-}
+const mutations = {};
 
-const getters = {}
+const getters = {};
 
 export default {
   state: localState,
   getters,
   actions,
-  mutations
-}
+  mutations,
+};

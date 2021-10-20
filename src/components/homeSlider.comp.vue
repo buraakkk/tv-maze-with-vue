@@ -78,10 +78,11 @@ export default {
   height: 90vh;
 }
 .custom-caption {
-  text-align: left;
-  padding: 12px;
-  margin-bottom: 70px;
+  text-align: center;
+  padding: 20px;
+  margin-bottom: 250px;
   color: white;
-  background-color: rgba(0, 0, 0, 0.3);
+  background-color: rgba(98, 95, 95, 0.3);
+  font-style: oblique;
 }
 </style>

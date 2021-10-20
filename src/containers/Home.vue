@@ -1,7 +1,7 @@
 <template>
   <q-page>
     <div class="row">
-      <home-slider :elements="limitPopularTvshow"></home-slider>
+      <home-slider :elements="sortedShowsByPopular"></home-slider>
     </div>
       <genres></genres>
   </q-page>
@@ -18,7 +18,7 @@ export default {
   name: "Home",
   computed: {
     ...mapGetters(["tvshows","popularTvShows"]),
-    limitPopularTvshow(){
+    sortedShowsByPopular(){
       return this.popularTvShows.slice(0,5)
     }
   },

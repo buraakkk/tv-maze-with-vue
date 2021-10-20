@@ -14,8 +14,8 @@
                   rounded
                   class="btn-fixed-width"
                   size="xl"
-                  color="primary"
-                  label="Watch Now"
+                  color="black"
+                  label="Watch"
                   icon="play_arrow"
                   type="a"
                   :href="tvshowsDetails.url"
@@ -28,10 +28,6 @@
       </div>
       <div class="col-md-6 q-pa-md">
         <div class="text-h2">{{tvshowsDetails.name}}</div>
-        <div class="text-subtitle2">
-          <q-icon name="language" />
-          {{tvshowsDetails.language}}
-        </div>
         <div class="fit">
           <div class="text-subtitle2" v-if="tvshowsDetails.rating">
             <q-rating
@@ -44,6 +40,10 @@
             <span class="text-caption text-grey q-ml-sm">{{tvshowsDetails.rating.average}}</span>
           </div>
           <div class="text-subtitle2" v-html="tvshowsDetails.summary"></div>
+          <div class="text-subtitle2">
+          <q-icon name="language" />
+          {{tvshowsDetails.language}}
+        </div>
         </div>
       </div>
     </div>
@@ -73,15 +73,15 @@
             >
               <q-tab-panel v-for="(tab,index) in tabs" :key="index" :name="tab.name">
                 <div class="text-h4 q-mb-md text-uppercase">{{tab.name}}</div>
+                <div v-if="tab.name==='crew'">
+                  <crew :crews="crews" />
+                </div>
                 <div v-if="tab.name==='episodes'">
                   <episodes :seasons="seasons" />
                 </div>
                 <div v-if="tab.name==='cast'">
                   <cast :casts="casts" />
-                </div>
-                <div v-if="tab.name==='crew'">
-                  <crew :crews="crews" />
-                </div>
+                </div>         
               </q-tab-panel>
             </q-tab-panels>
           </template>
