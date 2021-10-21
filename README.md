@@ -58,4 +58,3 @@ Navigate to http://localhost:8080 in your browser to explore the app
  $ npm start
 ```
 
-After building the app, frontend and backend servers will be merged into a single server and be available at http://localhost:8080
