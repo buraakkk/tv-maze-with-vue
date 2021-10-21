@@ -1,8 +1,25 @@
 # tv-maze-with-vue
 
+## Installation
+###   This app will fetch tracks from an external api (tv maze). 
 
+### Learn more about Vue (https://vuejs.org).
+### Learn more about Quasar (https://quasar.dev).
+### Install Node.js (http://nodejs.org). Any version above 6.0 works fine
 
+1. Run `npm install`.
+
+2. Run `npm start` to start the frontend
+
+###### Navigate to http://localhost:8080 or http://192.168.1.108:8080 in your browser to explore the app
+
+## Build the app
+* Build manually
+```
+ $ npm start
+```
 ## Features
+
 * display a few popular TV shows based on their rating and genre on a dashboard
 * search Tv shows
 * search for a TV show to get the details
@@ -11,12 +28,14 @@
 
 
 ## Features
+
 * sign up an sign in
 * add products
 * filter or sort products by categories, price, date, state, location
 * payment 
 * my account page 
 * add products to favourite list
+* 
 ## Bazzar!
 ![image](https://user-images.githubusercontent.com/50028862/136008155-4d2d60e8-dd95-40c6-9581-fe2cba2caab9.png)
 ## Add products
@@ -32,29 +51,4 @@
 ![image](https://user-images.githubusercontent.com/50028862/136008719-d69e77dd-5568-462f-8ce9-86a9f306e015.png)
 ![image](https://user-images.githubusercontent.com/50028862/136008745-5397ff6d-21b2-4565-ad8b-60b189e7c12f.png)
 
-
-## Installation
-### 
-> This app will fetch tracks from an external api (tv maze). 
-
-### Learn more about Vue (https://vuejs.org).
-### Learn more about Quasar (https://quasar.dev).
-
-Install Node.js (http://nodejs.org). Any version above 6.0 works fine
-
-
-
-1. Run `npm install`.
-
-2. Run `npm start` to start the frontend
-
-
-Navigate to http://localhost:8080 in your browser to explore the app
-
-
-## Build the app
-* Build manually
-```
- $ npm start
-```
 
