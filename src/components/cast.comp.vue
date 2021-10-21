@@ -6,7 +6,7 @@
   </div>
 </template>
 <script>
-import Card from "@/components/common/card.comp.vue";
+import Card from "@/functions/card.comp.vue";
 export default {
   name: "Cast",
   data(){

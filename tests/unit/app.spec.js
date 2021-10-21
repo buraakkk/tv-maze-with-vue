@@ -3,21 +3,21 @@ import Vue from "vue";
 import Quasar from "quasar";
 import VueRouter from "vue-router";
 import App from "@/App.vue";
-import store from '@/store'
-import router from '@/router'
-import Home from '@/containers/Home.vue'
-import DrawerComp from "@/components/common/drawer.comp.vue";
-import SearchComp from "@/components/common/search.comp.vue";
+import store from "@/store";
+import router from "@/router";
+import Home from "@/containers/Home.vue";
+import DrawerComp from "@/functions/drawer.comp.vue";
+import SearchComp from "@/functions/search.comp.vue";
 
-describe('App.vue', () => {
-  let mainWrapper
+describe("App.vue", () => {
+  let mainWrapper;
   beforeEach(() => {
     Vue.use(VueRouter);
     Vue.use(Quasar);
     mainWrapper = shallowMount(App, {
       Vue,
       router,
-      store
+      store,
     });
   });
   afterEach(() => {
@@ -27,12 +27,12 @@ describe('App.vue', () => {
   it("is a Vue instance", () => {
     expect(mainWrapper.isVueInstance).toBeTruthy();
   });
-  it('it should have a q-page element', () => {
+  it("it should have a q-page element", () => {
     expect(mainWrapper.html()).toContain("q-layout");
   });
 
   describe("it should render router view", () => {
-    it('it should have a q-page', () => {
+    it("it should have a q-page", () => {
       expect(mainWrapper.html()).toContain("q-page");
     });
     it("it should load the Home view by default", () => {
@@ -55,8 +55,8 @@ describe('App.vue', () => {
       expect(SearchComp).toBeTruthy();
     });
   });
-  it('method testing', () => {
-    mainWrapper.vm.getLeftDrawer()
-    expect(store.state.config.leftDrawerOpen).toBe(false)
-  })
-})
+  it("method testing", () => {
+    mainWrapper.vm.getLeftDrawer();
+    expect(store.state.config.leftDrawerOpen).toBe(false);
+  });
+});

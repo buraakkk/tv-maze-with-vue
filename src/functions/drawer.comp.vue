@@ -28,7 +28,7 @@
 
 <script>
 import { mapGetters } from "vuex";
-import SearchBox from "@/components/common/search.comp.vue";
+import SearchBox from "@/functions/search.comp.vue";
 export default {
   name: "LayoutDefault",
   computed: {

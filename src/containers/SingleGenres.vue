@@ -18,7 +18,7 @@
 
 <script>
 import { mapGetters } from "vuex";
-import Card from "@/components/common/card.comp.vue";
+import Card from "@/functions/card.comp.vue";
 export default {
   name: "SingleGenres",
   data() {

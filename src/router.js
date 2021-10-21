@@ -5,7 +5,7 @@ import VueRouter from "vue-router";
 // import files
 import Home from "./containers/Home";
 import Search from "./containers/Search";
-import Error404 from "./containers/Error404";
+import Error from "./containers/Error";
 import Genres from "./containers/Genres";
 import SingleGenres from "./containers/SingleGenres";
 import SingleTvshows from "./containers/SingleTvshows";
@@ -20,7 +20,7 @@ export default new VueRouter({
       path: "/",
       component: Home,
       meta: {
-        title: "Dashbord | Tv Shows",
+        title: "Homepage",
       },
     },
     {
@@ -44,7 +44,7 @@ export default new VueRouter({
       path: "/genres",
       component: Genres,
       meta: {
-        title: "Genres | Tv Shows",
+        title: "Tv Shows | Genres",
       },
     },
     {
@@ -52,15 +52,15 @@ export default new VueRouter({
       path: "/genres/:type",
       component: SingleGenres,
       meta: {
-        title: "All tv shows from Genres | Tv Shows",
+        title: "All tv shows from Tv Shows | Genres",
       },
     },
     // - * ---------------------
     {
       path: "*",
-      component: Error404,
+      component: Error,
       meta: {
-        title: "Error | Tv Shows",
+        title: "Tv Shows | Error ",
       },
     },
   ],

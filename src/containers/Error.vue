@@ -1,6 +1,6 @@
 <template>
   <q-page class="flex">
-    <h1>Error404</h1>
+    <h1>Error</h1>
   </q-page>
 </template>
 
@@ -9,7 +9,7 @@
 
 <script>
 export default {
-  name: 'Error404',
+  name: 'Error',
   props: {
     msg: String
   }

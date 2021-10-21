@@ -7,7 +7,7 @@
       swipeable
       animated
       control-type="regular"
-      control-color="primary"
+      control-color="black"
       control-text-color="white"
       arrows
       height="400px"

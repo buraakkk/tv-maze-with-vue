@@ -33,8 +33,8 @@
 
 <script>
 import { mapActions } from "vuex";
-import DrawerComp from "@/components/common/drawer.comp.vue";
-import SearchComp from "@/components/common/search.comp.vue";
+import DrawerComp from "@/functions/drawer.comp.vue";
+import SearchComp from "@/functions/search.comp.vue";
 export default {
   name: "LayoutDefault",
   components: {
