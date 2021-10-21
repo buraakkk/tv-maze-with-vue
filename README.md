@@ -26,16 +26,6 @@
 * filter Tv shows by genres
 * see all episodes, crew and cast of the shows
 
-
-## Features
-
-* sign up an sign in
-* add products
-* filter or sort products by categories, price, date, state, location
-* payment 
-* my account page 
-* add products to favourite list
-* 
 ## Bazzar!
 ![image](https://user-images.githubusercontent.com/50028862/136008155-4d2d60e8-dd95-40c6-9581-fe2cba2caab9.png)
 ## Add products
