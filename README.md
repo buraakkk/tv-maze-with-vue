@@ -37,7 +37,8 @@
 ### 
 > This app will fetch tracks from an external api (tv maze). 
 
-Learn more about Vue (https://vuejs.org).
+### Learn more about Vue (https://vuejs.org).
+### Learn more about Quasar (https://quasar.dev).
 
 Install Node.js (http://nodejs.org). Any version above 6.0 works fine
 
