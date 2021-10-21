@@ -21,10 +21,10 @@
 ## Features
 
 * display a few popular TV shows based on their rating and genre on a dashboard
+* display TV shows based on their genres
 * search Tv shows
 * search for a TV show to get the details
-* filter Tv shows by genres
-* see all episodes, crew and cast of the shows
+* see all episodes, crew and cast of the shows 
 
 ## Bazzar!
 ![image](https://user-images.githubusercontent.com/50028862/136008155-4d2d60e8-dd95-40c6-9581-fe2cba2caab9.png)
