@@ -19,7 +19,7 @@
             size="1em"
             v-model="element.rating.average"
             :max="10"
-            color="orange"
+            color="red"
             icon="star_border"
             icon-selected="star"
             icon-half="star_half"

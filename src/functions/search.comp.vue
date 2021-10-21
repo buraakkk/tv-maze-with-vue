@@ -3,7 +3,7 @@
     dense
     standout
     v-model="search"
-    input-class="text-right"
+    input-class="text-left"
     class="q-ml-md"
     @keydown.enter.prevent="searchItem(search)"
   >

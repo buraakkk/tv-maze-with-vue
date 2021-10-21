@@ -7,7 +7,7 @@
           style="border-radius: 20px"
           icon="dvr"
           :label="'Season '+season[0].season"
-          header-class="bg-primary text-white"
+          header-class="bg-red text-white"
           expand-icon-class="text-white"
         >
           <q-card>

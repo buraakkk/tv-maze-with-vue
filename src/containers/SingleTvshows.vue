@@ -29,21 +29,21 @@
       <div class="col-md-6 q-pa-md">
         <div class="text-h2">{{tvshowsDetails.name}}</div>
         <div class="fit">
-          <div class="text-subtitle2" v-if="tvshowsDetails.rating">
-            <q-rating
-              size="18px"
-              v-model="tvshowsDetails.rating.average"
-              :max="10"
-              color="orange"
-              readonly
-            />
-            <span class="text-caption text-grey q-ml-sm">{{tvshowsDetails.rating.average}}</span>
-          </div>
-          <div class="text-subtitle2" v-html="tvshowsDetails.summary"></div>
           <div class="text-subtitle2">
           <q-icon name="language" />
           {{tvshowsDetails.language}}
         </div>
+          <div class="text-subtitle2" v-if="tvshowsDetails.rating">
+            <q-rating
+              size="2em"
+              v-model="tvshowsDetails.rating.average"
+              :max="10"
+              color="red"
+              readonly
+            />
+            <span class="text-caption text-grey q-ml-sm">{{tvshowsDetails.rating.average}}</span>
+          </div>
+          <div class="text-subtitle2" v-html="tvshowsDetails.summary"></div> 
         </div>
       </div>
     </div>
@@ -55,7 +55,7 @@
               <q-tab
                 v-for="(tab,index) in tabs"
                 :key="index"
-                class="text-primary"
+                class="text-red"
                 :icon="tab.icon"
                 :name="tab.name"
                 :label="tab.name"

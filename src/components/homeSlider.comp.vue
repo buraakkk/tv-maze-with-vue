@@ -12,10 +12,10 @@
             <div class="text-h2 text-white">{{ele.name}}</div>
             <div class="items-center" v-if="ele.rating">
               <q-rating
-                size="2em"
+                size="3em"
                 v-model="ele.rating.average"
                 :max="10"
-                color="orange"
+                color="red"
                 icon="star_border"
                 icon-selected="star"
                 icon-half="star_half"
@@ -37,14 +37,14 @@
               v-for="(genre,index) in ele.genres"
               :key="index"
             >
-              <q-avatar icon="category" color="teal" text-color="white" />
+              <q-avatar icon="category" color="red" text-color="white" />
               {{genre}}
             </q-chip>
           </div>
           <div class="col-md-6 items-center">
             <q-btn
               round
-              color="primary"
+              color="red"
               icon="play_arrow"
               size="lg"
               :to="{name:'singleTvshows',params:{id:ele.id}}"
