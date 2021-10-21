@@ -9,7 +9,6 @@
 * filter Tv shows by genres
 * see all episodes, crew and cast of the shows
 
-Bazaar  app made with React + MongoDB + Nodejs + Expressjs
 
 ## Features
 * sign up an sign in
