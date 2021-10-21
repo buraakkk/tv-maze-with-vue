@@ -13,11 +13,6 @@
 
 ###### Navigate to http://localhost:8080 or http://192.168.1.108:8080 in your browser to explore the app
 
-## Build the app
-* Build manually
-```
- $ npm start
-```
 ## Features
 
 * display a few popular TV shows based on their rating and genre on a dashboard
