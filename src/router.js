@@ -6,6 +6,7 @@ import VueRouter from "vue-router";
 import Home from "./containers/Home";
 import Search from "./containers/Search";
 import Error from "./containers/Error";
+import People from "./containers/People";
 import Genres from "./containers/Genres";
 import SingleGenres from "./containers/SingleGenres";
 import SingleTvshows from "./containers/SingleTvshows";
@@ -53,6 +54,14 @@ export default new VueRouter({
       component: SingleGenres,
       meta: {
         title: "All tv shows from Tv Shows | Genres",
+      },
+    },
+    {
+      name: "people",
+      path: "/people",
+      component: People,
+      meta: {
+        title: "people",
       },
     },
     // - * ---------------------
