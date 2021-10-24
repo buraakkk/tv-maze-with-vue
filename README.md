@@ -18,15 +18,17 @@ git clone https://github.com/buraakkk/tv-maze-with-vue.git
 cd project
 npm install 
 npm run build
+```
 
 ## Usage
 ```
 npm start
+```
 
 ## To Visit App:
 ```
 http://localhost:8080
-
+```
 
 ## Features
 
