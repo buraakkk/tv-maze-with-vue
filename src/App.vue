@@ -39,24 +39,24 @@ export default {
   name: "LayoutDefault",
   components: {
     DrawerComp,
-    SearchComp
+    SearchComp,
   },
-  computed:{
-    ...mapActions(['toggelMenu'])
+  computed: {
+    ...mapActions(["toggelMenu"]),
   },
-  methods:{
-    getLeftDrawer(){
-      this.$store.dispatch("toggelMenu")
-    }
+  methods: {
+    getLeftDrawer() {
+      this.$store.dispatch("toggelMenu");
+    },
   },
-  mounted(){
-    this.$store.dispatch("toggelMenu")
-  }
+  mounted() {
+    this.$store.dispatch("toggelMenu");
+  },
 };
 </script>
 
 <style>
 .logo {
-  width: 70px;
+  width: 50px;
 }
 </style>
